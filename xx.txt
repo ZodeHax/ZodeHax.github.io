@@ -6,7 +6,5 @@
         <p>Hey Look Listen</p>
       </section>
     </div>
-
-    
   </body>
 </html>
