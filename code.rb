@@ -4,3 +4,4 @@ maxnum=Kernel.pbMessageFreeText(_INTL("Enter a Number"),
 num=rand(maxnum)+1
 Kernel.pbMessage("#{num} / #{maxnum}")
 Kernel.pbMessage("Changed")
+Kernel.pbMessage("again")
