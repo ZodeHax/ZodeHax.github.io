@@ -3,3 +3,4 @@ maxnum=Kernel.pbMessageFreeText(_INTL("Enter a Number"),
                                  false,6,Graphics.width).to_i
 num=rand(maxnum)+1
 Kernel.pbMessage("#{num} / #{maxnum}")
+Kernel.pbMessage("Edited once")
