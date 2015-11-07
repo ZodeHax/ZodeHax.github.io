@@ -10,8 +10,8 @@ poke=$Trainer.party[0]#pbChoosePokemon(1,6)
 pid = rand(65536)
 pid |= (pid << 16)
 pid &= 0xFFFFFFF8 
-pid |= rand(SHINYPOKEMONCHANCE)
+pid |= rand(8)
 pid ^= $Trainer.id
-#pid -= pid%25
+pid -= pid%25
 poke.personalID=pid
 poke.calcStats
