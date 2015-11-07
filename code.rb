@@ -12,6 +12,6 @@ pid |= (pid << 16)
 pid &= 0xFFFFFFF8 
 pid |= rand(8)
 pid ^= $Trainer.id
-pid -= pid%25
+#pid -= pid%25
 poke.personalID=pid
 poke.calcStats
