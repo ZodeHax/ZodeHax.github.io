@@ -6,6 +6,7 @@ num=rand(maxnum)+1
 Kernel.pbMessage("#{num} / #{maxnum}")
 Kernel.pbMessage("Edited once")
 =end
+=begin
 poke=$Trainer.party[0]#pbChoosePokemon(1,6)
 pid = rand(65536)
 pid |= (pid << 16)
@@ -15,3 +16,5 @@ pid ^= $Trainer.id
 pid -= pid % 25
 poke.personalID=pid
 poke.calcStats
+=end
+Kernel.pbMessage("This is online executed Code")
