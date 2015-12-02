@@ -806,3 +806,7 @@ item_ary = {
 {Value=1615,Name="Devil Horns"},
 {Value=1617,Name="Silver Crown"}
 }
+
+item_ary = {
+{Value=nil,Name="Fuck You"}
+}
