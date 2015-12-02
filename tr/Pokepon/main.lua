@@ -1,5 +1,4 @@
 -- Script starts here
-website = "http://zodehax.github.io/tr/Pokepon"
 namefile = "caption"
 versionfile = "version"
 naturefile = "nature.list"
