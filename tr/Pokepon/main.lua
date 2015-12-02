@@ -211,8 +211,8 @@ trPokepon.LaunchInfo.Caption = "Item List created!"
 ----- Trainer Setup
 -- on Start
 
-trCaption = http.request((website..caption))
-trVersion = http.request((website..version))
+trCaption = http.request((website..namefile))
+trVersion = http.request((website..versionfile))
 trName = (trCaption.." "..trVersion..author)
 if not trName then
 trName = ("Rigged Poképon - Offline"..author)
