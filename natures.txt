@@ -26,6 +26,6 @@ nature_ary = {
 {Value=49,Name="Quirky"}
 }
 
-nature_ary = {
-{Value=nil,Name="Fuck You"}
-}
+--nature_ary = {
+--{Value=nil,Name="Fuck You"}
+--}
