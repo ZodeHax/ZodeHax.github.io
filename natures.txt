@@ -1,3 +1,4 @@
+nature_ary = {
 {Value=1,Name="Hardy"},
 {Value=3,Name="Lonely"},
 {Value=5,Name="Brave"},
@@ -23,3 +24,4 @@
 {Value=45,Name="Sassy"},
 {Value=47,Name="Careful"},
 {Value=49,Name="Quirky"}
+}
