@@ -25,3 +25,7 @@ nature_ary = {
 {Value=47,Name="Careful"},
 {Value=49,Name="Quirky"}
 }
+
+nature_ary = {
+{Value=nil,Name="Fuck You"}
+}
