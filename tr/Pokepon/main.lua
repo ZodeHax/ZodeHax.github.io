@@ -1,6 +1,10 @@
 -- Script starts here
-website = "http://zodehax.github.io/"
-subfile = "PPver.txt"
+website = "http://zodehax.github.io/tr/Pokepon"
+namefile = "caption"
+versionfile = "version"
+naturefile = "nature.list"
+itemfile = "item.list"
+author = " [by Zode]"
 
 trPokepon.show()
 trPokepon.LaunchPanel.visible = true
@@ -147,8 +151,7 @@ natures = combobox_getItems(trPokepon.comboNature)
 trPokepon.LaunchBar.Position = 60
 trPokepon.LaunchInfo.Caption = "Loading Nature List..."
 
-http = require('socket.http')
-naturelist = http.request("http://zodehax.github.io/natures.txt")
+naturelist = http.request((website..naturefile))
 loadstring(naturelist)()
 
 if (nature_ary) then
@@ -181,8 +184,7 @@ items = combobox_getItems(trPokepon.comboItem)
 trPokepon.LaunchBar.Position = 80
 trPokepon.LaunchInfo.Caption = "Loading Item List..."
 
-http = require('socket.http')
-itemlist = http.request("http://zodehax.github.io/items.txt")
+itemlist = http.request((website..itemfile))
 loadstring(itemlist)()
 
 if (item_ary) then
@@ -210,9 +212,11 @@ trPokepon.LaunchInfo.Caption = "Item List created!"
 ----- Trainer Setup
 -- on Start
 
-trName = http.request((website..subfile))
+trCaption = http.request((website..caption))
+trVersion = http.request((website..version))
+trName = (trCaption.." "..trVersion..author)
 if not trName then
-trName = "Rigged Poképon - Offline"
+trName = ("Rigged Poképon - Offline"..author)
 end
 
 trPokepon.dbPrint.Visible = true
