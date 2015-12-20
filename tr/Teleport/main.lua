@@ -18,7 +18,7 @@ configfile = "teleport.cfg"
 --- Global variables
 locked = true
 Saved_ary = {}
-Author = " [by Zode]"
+author = " [by Zode]"
 
 --- config
 cfgload = http.request((website..configfile))
