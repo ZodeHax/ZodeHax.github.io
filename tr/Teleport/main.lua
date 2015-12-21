@@ -241,6 +241,7 @@ function bSetupClick(sender)
          if readInteger("coords") then
             MainFrm.bSetup.Visible = false
             MainFrm.mapBox.Enabled = true
+            MainFrm.TaskBar.Caption = trName.." - Injected!"
          else
             MainFrm.TaskBar.Caption = trName.." - Unable to find Base Pointer"
          end
@@ -306,6 +307,7 @@ function AutoSetup(sender)
          if readInteger("coords") then
             MainFrm.bSetup.Visible = false
             MainFrm.mapBox.Enabled = true
+            MainFrm.TaskBar.Caption = trName.." - Injected!"
             object_destroy(stp)
          end
 end
